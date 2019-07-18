@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>LOGO</li>
+            <li><a href="index.html">Go to Main page</a></li>
+        </ul>
+    </nav>
+    <h2>Dog parameters</h2>
+    <form method="POST" action="https://formspree.io/maslova.ekaterina94@gmail.com">
+        <label>Dog name <input name="dog-name" type="text" placeholder="Dog name" required></label>
+        <label>Your e-mail <input name="dog-email" type="email" placeholder="Your e-mail" required></label>
+        <label>Your telephone <input name="dog-tel" type="tel" placeholder="Your telephone" required ></label>
+        <h5>Dog gender</h5>
+        <label><input name="dog-gender" type="radio" checked> Male</label>
+        <label><input name="dog-gender" type="radio"> Female</label>
+        <h5>More information</h5>
+        <label><input name="dog-vaccinations" type="checkbox"> vaccinations</label>
+        <label><input name="dog-sterilization" type="checkbox"> sterilization</label>
+        <label><input name="dog-chipping" type="checkbox"> chipping</label>
+        <h5>Dog breed</h5>
+        <input type="text" list="breeds" name="dog-breed">
+        <datalist id="breeds">
+            <option value="Bulldog"></option>
+            <option value="Spaniel"></option>
+            <option value="Beagle"></option>
+            <option value="Bolognese"></option>
+            <option value="Borzoi"></option>
+            <option value="Bull Terrier"></option>
+            <option value="Cane Corso"></option>
+            <option value="Chihuahua"></option>
+        </datalist>
+        <h5>Dog age</h5>
+        <select name="dog-age">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+        </select>
+        <h5>Comments</h5>
+        <textarea name="dog-comments" cols="30" rows="10"></textarea>
+        <input type="submit" value="SEND">
+    </form>
+</body>
+</html>
